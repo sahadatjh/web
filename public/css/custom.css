@@ -1,0 +1,77 @@
+.bg-color-top{
+	background-color: #ff3300;
+}
+.bg-color-top-head{
+	background-color: #0c04ae;
+}
+.p-top-20{
+	padding-top: 20px;
+}
+.height-300{
+	height: 300px;
+}
+.principal-msg{
+	margin-left: 15px;
+	margin-right: 10px;
+    /*margin-top: 15px;*/
+    height: 300px;
+    width: 100%;
+    border: none !important;
+}
+.chairman-msg{
+	margin-right: 15px;
+	margin-left: 10px;
+    /*margin-top: 15px;*/
+    height: 300px;
+    width: 100%;
+    border: none !important;
+}
+.principal-msg img, .chairman-msg img{
+	text-align: center;
+}
+.principal-msg p, .chairman-msg p{
+	text-align: justify
+}
+.about_us .card-body p{
+	text-align: justify;
+}
+.about_us .card h5{
+	padding-top: 5px;
+}
+.footer_background {
+    background-color: #ed7d31 !important;
+}
+.footer{
+	color: white !important;
+}
+
+.bg-main-nav{
+	background-color: #ed7d31 !important;
+}
+
+.footer_background ul li a{
+	color: #0c04ae;
+}
+
+.img-span-logo img{
+	width: 125px !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.header-text span{
+	font-size: 25px; 
+}
+.bg-color-marque{
+	background-color: #66ffff;
+}
+.bg-color-marque .marquee-content{
+	height: 35px;
+	color: #000;
+}
+.bg-color-marque .marquee-content .marquee-self{
+	padding-top: 5px;
+}
+.school-name{
+    font-size: 50px;
+    font-weight: bold;
+}
