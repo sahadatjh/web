@@ -75,6 +75,11 @@
                           <td>Permanent Address: <input type="text" name="permanent_address" class="form-control" value="{{$data->permanent_address}}" /></td>
                           <td>Email: <input type="email" name="email" class="form-control" value="{{$data->email}}" required/></td>
                           <td>Sms Mobile: <input type="text" name="sms_mobile" class="form-control" value="{{$data->sms_mobile}}" /></td>
+                          <td>Employee Type: <select name="employee_type" class="form-control">
+                            <option value="mpo_teacher"  {{ $data->employee_type == 'mpo_teacher' ? 'selected' : '' }}>Mpo teacher</option>
+                            <option value="non_mpo_teacher" {{ $data->employee_type == 'non_mpo_teacher' ? 'selected' : '' }}>Non Mpo teacher</option>
+                            <option value="office_staff" {{ $data->employee_type == 'office_staff' ? 'selected' : '' }}>Office Staff</option>
+                          </select></td>
                       </tr>
 
                       <tr>

@@ -95,6 +95,7 @@ class TeacherController extends Controller
         $data['email'] = $request->email;
         $data['sms_mobile'] = $request->sms_mobile;
 
+        $data['employee_type'] = $request->employee_type;
         $data['create_by'] = $adminSessionData['id'];
 
         // dd($data);
@@ -199,6 +200,7 @@ class TeacherController extends Controller
         $data['permanent_address'] = $request->permanent_address;
         $data['email'] = $request->email;
         $data['sms_mobile'] = $request->sms_mobile;
+        $data['employee_type'] = $request->employee_type;
 
         $data['update_by'] = $adminSessionData['id'];
         $data['update_date'] = date('Y-m-d');

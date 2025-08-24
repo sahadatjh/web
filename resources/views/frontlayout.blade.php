@@ -165,12 +165,12 @@
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="#">Notice Board</a>
 		          <a class="dropdown-item" href="#">Payment Procedure</a>
-		          <a class="dropdown-item" href="#">Facilities</a>
+		          <a class="dropdown-item" href="{{url('page/branch')}}">শাখা</a>
 		          <a class="dropdown-item" href="#">News & Events</a>
 		          <a class="dropdown-item" href="#">Our Achievements</a>
-		          <a class="dropdown-item" href="#">Policies & Guidelines</a>
+		          <a class="dropdown-item" href="{{url('page/information-service')}}">তথ্য সেবা</a>
 		          <a class="dropdown-item" href="#">Library</a>
-		          <a class="dropdown-item" href="#">Health & Environmental info </a>
+		          <a class="dropdown-item" href="{{url('page/teaching-service')}}">পাঠদান সংক্রান্ত তথ্য</a>
 		        </div>
 		      </li>
 
@@ -210,8 +210,18 @@
 		          <a class="dropdown-item" href="#">Mathematics Club</a>
 		        </div>
 		      </li>
-		      <li class="nav-item">
+		      <!-- <li class="nav-item">
 		       <a class="nav-link" href="{{url('all-teachers')}}">Teachers</a>
+		      </li> -->
+			   <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Teachers
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="{{url('teachers')}}?employee_type=mpo_teacher">MPO Teacher</a>
+		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=non_mpo_teacher">Non Mpo Teacher</a>
+		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=office_staff">Office Staff</a>
+		        </div>
 		      </li>
 
 		      <!-- li class="nav-item dropdown">

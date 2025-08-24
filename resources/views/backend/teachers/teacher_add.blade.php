@@ -73,6 +73,11 @@
                           <td>Permanent Address: <input type="text" name="permanent_address" class="form-control" /></td>
                           <td>Email: <input type="email" name="email" class="form-control" required/></td>
                           <td>Sms Mobile: <input type="text" name="sms_mobile" class="form-control" /></td>
+                          <td>Employee Type: <select name="employee_type" class="form-control">
+                            <option value="mpo_teacher">Mpo teacher</option>
+                            <option value="non_mpo_teacher">Non Mpo teacher</option>
+                            <option value="office_staff">Office Staff</option>
+                          </select></td>
                       </tr>
 
                       <tr>

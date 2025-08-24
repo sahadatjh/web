@@ -143,12 +143,23 @@ class HomeController extends Controller
 
     // All teachers
     function all_teachers(Request $request,$cat_id = null){
-        $teachers=Teacher::orderBy('id','desc')->paginate(5);
-        // dd($teachers);
-        $posts=Post::where('cat_id',$cat_id)->orderBy('id','desc')->paginate(2);
+        $employee_type = $request->query('employee_type');
+        $sql = Teacher::orderBy('id', 'desc');
+         if ($employee_type) {
+            if ($employee_type === 'mpo_teacher') {
+                    $sql->where('employee_type', 'mpo_teacher');
+            } elseif ($employee_type === 'non_mpo_teacher') {
+                    $sql->where('employee_type', 'non_mpo_teacher');
+            } elseif ($employee_type === 'office_staff') {
+                    $sql->where('employee_type', 'office_staff');
+            } else {
+                    // If the employee_type does not match any known type, you can handle it accordingly.   
+            }
+        }
+        $teachers = $sql->get();
+        $posts = Post::where('cat_id', $cat_id)->orderBy('id', 'desc')->paginate(2);
         return view('teachers.all_teachers',['posts'=>$posts,'teachers'=>$teachers]);
     }
-
     // getContentForPage
     function getContentForPage($slug){
         $data = $this->CommonAdminmodel->getIndividualDataWhere('cms_pages', ['menu' => $slug]);

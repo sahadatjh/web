@@ -70,7 +70,8 @@
             <a class="dropdown-item" href="{{url('admin/cms_pages/academic')}}">Academic</a>
             <a class="dropdown-item" href="{{url('admin/cms_pages/admission')}}">Admission</a>
             <a class="dropdown-item" href="{{url('admin/cms_pages/rules_regulation')}}">Rules Regulation</a>
-            <!-- <a class="dropdown-item" href="{{url('admin/information_pages')}}">Information</a>
+            <a class="dropdown-item" href="{{url('admin/cms_pages/information')}}">Information</a>
+            <!--<a class="dropdown-item" href="{{url('admin/information_pages')}}">Information</a>
             <a class="dropdown-item" href="{{url('admin/event_pages')}}">Events</a> -->
           </div>
         </li>

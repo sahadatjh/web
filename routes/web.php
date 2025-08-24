@@ -152,7 +152,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); 
 
 // Teachers page
-Route::get('/all-teachers',[HomeController::class,'all_teachers']);
-
+Route::get('/teachers',[HomeController::class,'all_teachers']);
 // getContentForPage
 Route::get('/page/{slug}',[HomeController::class,'getContentForPage']);
