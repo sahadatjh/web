@@ -79,31 +79,31 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="{{url('/')}}">Home</a>
+		        <a class="nav-link" href="{{url('/')}}">হোম</a>
 		      </li>
 		      <!-- <li class="nav-item">
 		        <a class="nav-link" href="{{url('all-categories')}}">Categories</a>
 		      </li> -->
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          About Us
+		          আমাদের সম্পর্কে 
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="{{url('page/at-a-glance')}}">At a Glance</a>
-		          <a class="dropdown-item" href="{{url('page/history')}}">History</a>
-		          <a class="dropdown-item" href="{{url('page/study-in-mbhs')}}">Why Study In MBHS</a> 
-		           <a class="dropdown-item" href="{{url('page/school-teaching-permission')}}">School Teaching Permission</a>
-		          <a class="dropdown-item" href="{{url('page/vision-and-mission')}}">Vision & Mission</a>
-		          <a class="dropdown-item" href="{{url('page/chairman-message')}}">Chairman Message</a>
+		          <a class="dropdown-item" href="{{url('page/at-a-glance')}}">একনজরে আমরা </a>
+		          <a class="dropdown-item" href="{{url('page/history')}}">ইতিহাস</a>
+		          <a class="dropdown-item" href="{{url('page/study-in-mbhs')}}">কেন MBHS এ পড়বেন</a> 
+		           <a class="dropdown-item" href="{{url('page/school-teaching-permission')}}">পাঠদানের অনুমতি</a>
+		          <a class="dropdown-item" href="{{url('page/vision-and-mission')}}">ভিসন ও মিশন</a>
+		          <a class="dropdown-item" href="{{url('page/chairman-message')}}">চেয়ারম্যান এর বার্তা</a>
 		          <!--<a class="dropdown-item" href="{{url('page/head-master-principal-message')}}">Head Master/ Principal  Message</a> -->
-		          <a class="dropdown-item" href="{{url('page/head-master-message')}}">Head Master Message</a>
-		          <a class="dropdown-item" href="{{url('page/governing-body')}}">Governing body</a>
-		          <a class="dropdown-item" href="{{url('page/organogram')}}">Organogram</a> 
+		          <a class="dropdown-item" href="{{url('page/head-master-message')}}">প্রধান শিক্ষক এর বার্তা</a>
+		          <a class="dropdown-item" href="{{url('page/governing-body')}}">পরিচালকবর্গ</a>
+		          <a class="dropdown-item" href="{{url('page/organogram')}}">অর্গানোগ্রাম</a> 
 		          <!--<a class="dropdown-item" href="{{url('page/Organization Introduction')}}">Organization Introduction</a> -->
-		          <a class="dropdown-item" href="{{url('page/our-location')}}">Our Location</a>
-		          <a class="dropdown-item" href="{{url('page/future-plan')}}">Future Plan</a>
-		          <a class="dropdown-item" href="{{url('page/beautiful-campus')}}">The Beautiful Campus</a>
-		          <a class="dropdown-item" href="{{url('page/infrastructure')}}">Infrastructure</a>
+		          <a class="dropdown-item" href="{{url('page/our-location')}}">আমাদের অবস্থান</a>
+		          <a class="dropdown-item" href="{{url('page/future-plan')}}">ভবিষ্যৎ পরিকল্পনা </a>
+		          <a class="dropdown-item" href="{{url('page/beautiful-campus')}}">সুন্দর ক্যাম্পাস </a>
+		          <a class="dropdown-item" href="{{url('page/infrastructure')}}">অবকাঠামো </a>
 		        </div>
 		      </li>
 
@@ -262,7 +262,7 @@
 
 		      @guest
 		      <li class="nav-item">
-		        <a class="nav-link" href="{{url('login')}}">Login</a>
+		        <a class="nav-link" href="{{url('admin/login')}}">Login</a>
 		      </li>
 		      <!-- <li class="nav-item">
 		        <a class="nav-link" href="{{url('register')}}">Register</a>
