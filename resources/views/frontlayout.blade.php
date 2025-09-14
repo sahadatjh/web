@@ -79,28 +79,35 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="{{url('/')}}">হোম</a>
+		        <a class="nav-link" href="{{url('/')}}">হোম </a>
+		       <!-- <a class="nav-link" href="{{url('/')}}">Home</a> -->
 		      </li>
+		      
 		      <!-- <li class="nav-item">
 		        <a class="nav-link" href="{{url('all-categories')}}">Categories</a>
 		      </li> -->
+		      
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          আমাদের সম্পর্কে 
+		          আমাদের সম্পর্কে
 		        </a>
+		       <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          About Us
+		        </a> -->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="{{url('page/at-a-glance')}}">একনজরে আমরা </a>
-		          <a class="dropdown-item" href="{{url('page/history')}}">ইতিহাস</a>
-		          <a class="dropdown-item" href="{{url('page/study-in-mbhs')}}">কেন MBHS এ পড়বেন</a> 
-		           <a class="dropdown-item" href="{{url('page/school-teaching-permission')}}">পাঠদানের অনুমতি</a>
-		          <a class="dropdown-item" href="{{url('page/vision-and-mission')}}">ভিসন ও মিশন</a>
-		          <a class="dropdown-item" href="{{url('page/chairman-message')}}">চেয়ারম্যান এর বার্তা</a>
+		          <a class="dropdown-item" href="{{url('page/institute-learning-permission')}}">প্রতিষ্ঠান পাঠদানের অনুমতি  </a>
+		          <a class="dropdown-item" href="{{url('page/history')}}">প্রতিষ্ঠান পরিচিতি </a>
+		          <a class="dropdown-item" href="{{url('page/study-in-mbhs')}}">কেন MBHS এ পড়বেন </a> 
+		           <!--<a class="dropdown-item" href="{{url('page/study-in-mbhs')}}">Why Study In mbhs</a> -->
+		          <a class="dropdown-item" href="{{url('page/vision-and-mission')}}">ভিসন এবং মিশন </a>
+		          <a class="dropdown-item" href="{{url('page/chairman-message')}}">চেয়ারম্যান এর বার্তা </a>
 		          <!--<a class="dropdown-item" href="{{url('page/head-master-principal-message')}}">Head Master/ Principal  Message</a> -->
-		          <a class="dropdown-item" href="{{url('page/head-master-message')}}">প্রধান শিক্ষক এর বার্তা</a>
-		          <a class="dropdown-item" href="{{url('page/governing-body')}}">পরিচালকবর্গ</a>
-		          <a class="dropdown-item" href="{{url('page/organogram')}}">অর্গানোগ্রাম</a> 
+		          <a class="dropdown-item" href="{{url('page/head-master-message')}}">প্রধান শিক্ষক এর বার্তা </a>
+		          <a class="dropdown-item" href="{{url('page/governing-body')}}">পরিচালনা পর্ষদ </a>
+		          <a class="dropdown-item" href="{{url('page/organogram')}}">অরগানোগ্রাম </a> 
 		          <!--<a class="dropdown-item" href="{{url('page/Organization Introduction')}}">Organization Introduction</a> -->
-		          <a class="dropdown-item" href="{{url('page/our-location')}}">আমাদের অবস্থান</a>
+		          <a class="dropdown-item" href="{{url('page/our-location')}}">আমাদের অবস্থান </a>
 		          <a class="dropdown-item" href="{{url('page/future-plan')}}">ভবিষ্যৎ পরিকল্পনা </a>
 		          <a class="dropdown-item" href="{{url('page/beautiful-campus')}}">সুন্দর ক্যাম্পাস </a>
 		          <a class="dropdown-item" href="{{url('page/infrastructure')}}">অবকাঠামো </a>
@@ -109,65 +116,85 @@
 
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          প্রশাসনিক
+		        </a>
+		        
+		       <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Academic
-		        </a>
+		        </a> -->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="{{url('page/others-publication')}}">Others Publication</a>
+		          <a class="dropdown-item" href="{{url('page/others-publication')}}">অন্যান্য প্রকাশনা </a>
 		          <a class="dropdown-item" href="{{url('page/curriculum')}}">Curriculum</a>
-		          <a class="dropdown-item" href="{{url('page/academic-calendar')}}">Academic Calendar</a>
-		          <a class="dropdown-item" href="{{url('page/scholarship')}}">Scholarship</a>
+		          <a class="dropdown-item" href="{{url('page/academic-calendar')}}">প্রাতিষ্ঠানিক দিনপঞ্জি r</a>
+		          <a class="dropdown-item" href="{{url('page/scholarship')}}">উপবৃত্তি </a>
 		          <a class="dropdown-item" href="{{url('page/result')}}">Result</a>
-		          <a class="dropdown-item" href="{{url('page/public-exam-result')}}">Public Exam Result</a>
-		          <a class="dropdown-item" href="{{url('page/digital-contents')}}">Digital Contents</a>
-		          <a class="dropdown-item" href="{{url('page/list-of-holidays')}}">List Of Holidays</a>
+		          <a class="dropdown-item" href="{{url('page/public-exam-result')}}">পাবলিক পরীক্ষার ফলাফল </a>
+		          <a class="dropdown-item" href="{{url('page/student')}}">Student</a>
+		          <a class="dropdown-item" href="{{url('page/list-of-holidays')}}">ছুটির তালিকা </a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          ভর্তি
+		        </a>
+		        
+		       <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Admission
-		        </a>
+		        </a>-->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="{{url('page/admission-notice')}}">Admission Notice</a>
-		          <a class="dropdown-item" href="{{url('page/guidelines')}}">Guidelines</a>
-		          <a class="dropdown-item" href="{{url('page/admission-form')}}">Admission Form</a>
-		          <a class="dropdown-item" href="{{url('page/admission-result')}}">Admission Result</a>
-		          <a class="dropdown-item" href="{{url('page/apply-now')}}">Apply Now</a>
-		          <a class="dropdown-item" href="{{url('page/admission-contents')}}">Admission Contents</a>
+		          <a class="dropdown-item" href="{{url('page/admission-notice')}}">ভর্তি বিজ্ঞপ্তি </a>
+		          <a class="dropdown-item" href="{{url('page/guidelines')}}">নির্দেশনা </a>
+		          <a class="dropdown-item" href="{{url('page/admission-form')}}">ভর্তি ফর্ম </a>
+		          <a class="dropdown-item" href="{{url('page/admission-result')}}">ভর্তি ফলাফল </a>
+		          <a class="dropdown-item" href="{{url('page/apply-now')}}">ভর্তির আবেদন </a>
+		          <a class="dropdown-item" href="{{url('page/admission-contents')}}">ভর্তি বিষয়বস্তু</a>
 		          <a class="dropdown-item" href="{{url('page/fast-facts')}}">Fast Facts</a>
-		          <a class="dropdown-item" href="{{url('page/fee-payment')}}">Fee & Payment</a>
-		          <a class="dropdown-item" href="{{url('page/scholarships')}}">Scholarships</a>
+		          <a class="dropdown-item" href="{{url('page/fee-payment')}}">ফি </a>
+		          <a class="dropdown-item" href="{{url('page/scholarships')}}">উপবৃত্তি </a>
 		          <a class="dropdown-item" href="{{url('page/transfer-procedures')}}">Transfer Procedures</a>
-		          <a class="dropdown-item" href="{{url('page/study-bmsc-shksc')}}">Study at BMSC/SHKSC</a>
-		          <a class="dropdown-item" href="{{url('page/admission-circular')}}">Admission Circular</a>
+		          <a class="dropdown-item" href="{{url('page/study-bmsc-shksc')}}">MBHS এ পড়াশোনা </a>
+		          <a class="dropdown-item" href="{{url('page/admission-circular')}}">ভর্তি বিজ্ঞপ্তি </a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          প্রতিষ্ঠানের নিয়ম-কানুন
+		        </a>
+		        
+		         <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Rules Regulation
-		        </a>
+		        </a> -->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="{{url('page/instruction-for-parents')}}">Instruction for Parents</a>
-		          <a class="dropdown-item" href="{{url('page/instruction-for-students')}}">Instruction for Students</a>
-		          <a class="dropdown-item" href="{{url('page/fee-and-expenditure')}}">Fee & Expenditure</a>
-		          <a class="dropdown-item" href="{{url('page/fee-payment-procedure')}}">Fee Payment Procedure</a>
-		          <a class="dropdown-item" href="{{url('page/uniform')}}">Uniform</a>
-		          <a class="dropdown-item" href="{{url('page/house')}}">House</a>
-		          <a class="dropdown-item" href="{{url('page/discipline')}}">Discipline </a>
+		          <a class="dropdown-item" href="{{url('page/instruction-for-parents')}}">পিতামাতার প্রতি নির্দেশনা </a>
+		          <a class="dropdown-item" href="{{url('page/instruction-for-students')}}">ছাত্রছাত্রীদের প্রতি নির্দেশনা </a>
+		          <a class="dropdown-item" href="{{url('page/fee-and-expenditure')}}">ফি এবং বায় </a>
+		          <a class="dropdown-item" href="{{url('page/fee-payment-procedure')}}">ফি পরিশোধের নিয়ম </a>
+		          <a class="dropdown-item" href="{{url('page/uniform')}}">পোশাক </a>
+		          <a class="dropdown-item" href="{{url('page/house')}}">বাসা</a>
+		          <a class="dropdown-item" href="{{url('page/discipline')}}">শৃঙ্খলা  </a>
 		        </div>
 		      </li>
 
-		      <li class="nav-item dropdown">
+		        <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Information
+		          তথ্য
 		        </a>
+		        
+		        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Information
+		        </a>-->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Notice Board</a>
-		          <a class="dropdown-item" href="#">Payment Procedure</a>
+		          <a class="dropdown-item" href="#">বিজ্ঞপ্তি বোর্ড </a>
+		          <a class="dropdown-item" href="#">পেমেন্ট পদ্ধতি </a>
 		          <a class="dropdown-item" href="{{url('page/branch')}}">শাখা</a>
-		          <a class="dropdown-item" href="#">News & Events</a>
-		          <a class="dropdown-item" href="#">Our Achievements</a>
+		          <a class="dropdown-item" href="#">খবর ও ঘটনাবলী </a>
+		          <a class="dropdown-item" href="#">আমাদের অর্জন </a>
 		          <a class="dropdown-item" href="{{url('page/information-service')}}">তথ্য সেবা</a>
 		          <a class="dropdown-item" href="#">Library</a>
 		          <a class="dropdown-item" href="{{url('page/teaching-service')}}">পাঠদান সংক্রান্ত তথ্য</a>
@@ -176,51 +203,70 @@
 
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Events
+		          ফটো গ্যালারি
 		        </a>
+		        
+		         <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Events
+		        </a>-->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Annual Cultural</a>
-		          <a class="dropdown-item" href="#">Annual Sports</a>
-		          <a class="dropdown-item" href="#">Inter Competition</a>
-		          <a class="dropdown-item" href="#">Study Tour</a>
-		          <a class="dropdown-item" href="#">Annual Picnic</a>
-		          <a class="dropdown-item" href="#">Nobin Boron</a>
-		          <a class="dropdown-item" href="#">Farewell</a>
-		          <a class="dropdown-item" href="#">Parents Day</a>
-		          <a class="dropdown-item" href="#">Special Day Celebration</a>
-		          <a class="dropdown-item" href="#">College Magazine</a>
-		          <a class="dropdown-item" href="#">Academic Activities</a>
+		          <a class="dropdown-item" href="#">বার্ষিক সাংস্কৃতিক</a>
+		          <a class="dropdown-item" href="#">বার্ষিক খেলাধুলা </a>
+		          <a class="dropdown-item" href="#">আন্তঃ প্রতিযোগীতা </a>
+		          <a class="dropdown-item" href="#">শিক্ষা সফর </a>
+		          <a class="dropdown-item" href="#">বার্ষিক বনভোজন </a>
+		          <a class="dropdown-item" href="#">নবীনবরণ </a>
+		          <a class="dropdown-item" href="#">বিদায় অনুষ্ঠান </a>
+		          <a class="dropdown-item" href="#">বাবা দিবস </a>
+		          <a class="dropdown-item" href="#">বিশেষ দিনের উৎযাপন </a>
+		          <a class="dropdown-item" href="#">কলেজ সাময়িকী </a>
+		          <a class="dropdown-item" href="#">একাডেমিক কার্যক্রম </a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Co- Curriculum
+		          ক্লাব সমূহ
 		        </a>
+		        
+		       <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Co- Curriculum
+		        </a>-->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Arts & Cultural Club</a>
-		          <a class="dropdown-item" href="#">BNCC</a>
-		          <a class="dropdown-item" href="#">Business Club</a>
-		          <a class="dropdown-item" href="#">Cultural</a>
-		          <a class="dropdown-item" href="#">Debate Club</a>
-		          <a class="dropdown-item" href="#">Girls Guide</a>
-		          <a class="dropdown-item" href="#">Green Thumb</a>
-		          <a class="dropdown-item" href="#">ICT Club</a>
-		          <a class="dropdown-item" href="#">Language Club</a>
-		          <a class="dropdown-item" href="#">Mathematics Club</a>
+		          <a class="dropdown-item" href="#">চিত্র ও সাংস্কৃতিক ক্লাব </a>
+		          <a class="dropdown-item" href="#">MBHS</a>
+		          <a class="dropdown-item" href="#">ব্যবসায়িক ক্লাব  </a>
+		          <a class="dropdown-item" href="#">সংস্কৃতি </a>
+		          <a class="dropdown-item" href="#">বিতর্ক ক্লাব </a>
+		          <a class="dropdown-item" href="#">গার্লস গাইড </a>
+		          <a class="dropdown-item" href="#">গ্রিন থাম্ব </a>
+		          <a class="dropdown-item" href="#">তথ্য প্রযুক্তি ক্লাব </a>
+		          <a class="dropdown-item" href="#">ভাষা ক্লাব </a>
+		          <a class="dropdown-item" href="#">গণিত ক্লাব </a>
 		        </div>
 		      </li>
-		      <!-- <li class="nav-item">
+		      <!--<li class="nav-item">
 		       <a class="nav-link" href="{{url('all-teachers')}}">Teachers</a>
-		      </li> -->
-			   <li class="nav-item dropdown">
+		      </li>-->
+		       <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Teachers
+		          শিক্ষকমন্ডলী
 		        </a>
+		        
+		        <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Teachers
+		        </a>-->
+		        
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="{{url('teachers')}}?employee_type=mpo_teacher">MPO Teacher</a>
+				  <a class="dropdown-item" href="{{url('teachers')}}?employee_type=mpo_teacher">এমপিও শিক্ষক</a>
+		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=non_mpo_teacher">নন এমপিও শিক্ষক</a>
+		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=office_staff">অফিস  সহকারী</a>
+		          
+		         <!-- <a class="dropdown-item" href="{{url('teachers')}}?employee_type=mpo_teacher">MPO Teacher</a>
 		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=non_mpo_teacher">Non Mpo Teacher</a>
-		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=office_staff">Office Staff</a>
+		          <a class="dropdown-item" href="{{url('teachers')}}?employee_type=office_staff">Office Staff</a>-->
 		        </div>
 		      </li>
 
@@ -262,7 +308,7 @@
 
 		      @guest
 		      <li class="nav-item">
-		        <a class="nav-link" href="{{url('admin/login')}}">Login</a>
+		        <a class="nav-link" href="{{url('admin/login')}}">লগইন </a>
 		      </li>
 		      <!-- <li class="nav-item">
 		        <a class="nav-link" href="{{url('register')}}">Register</a>
