@@ -27,7 +27,10 @@
     border: none !important;
 }
 .principal-msg img, .chairman-msg img{
-	text-align: center;
+	float: left;
+    margin-right: 10px;
+    height: 180px;
+    width: 150px;
 }
 .principal-msg p, .chairman-msg p{
 	text-align: justify

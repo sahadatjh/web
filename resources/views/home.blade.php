@@ -5,39 +5,35 @@
 			<div class="col-md-3 height-300">
 				<div class="row"> 
 					<div class="card principal-msg" width="200">
-
-						<?php 
-						$left_banner_contents = null;
-						$right_banner_contents = null;
-						foreach ($banners_contents as $key => $banners_content) {
-							if($banners_content->position == "left"){
-								$left_banner_contents = $banners_content;
-							}else{
-								$right_banner_contents = $banners_content;
+						@php
+							$left_banner_contents = null;
+							$right_banner_contents = null;
+							foreach ($banners_contents as $key => $banners_content) {
+								if($banners_content->position == "left"){
+									$left_banner_contents = $banners_content;
+								}else{
+									$right_banner_contents = $banners_content;
+								}
 							}
-						}
-
-						?>
-
-						<div class="text-center">
-							<?php
-								if(isset($left_banner_contents->image)){ ?>
-									<img class="rounded" src="{{ asset('imgs/banner_contents').'/'.$left_banner_contents->image }}" width="50%" height="100">
-								<?php }else{ ?>
-									<img class="rounded" src="https://dummyimage.com/1200x400/000/fff" width="50%" height="100">
-								<?php }
-							?>
-							
-						</div>
-						<p class="h-100">
-							<?php
-							if(isset($left_banner_contents->contents)){
-								echo $left_banner_contents->contents;
-							}else{
-								echo "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content meaningful content";
+							$shortContent = "";
+							if($left_banner_contents && $left_banner_contents->contents){
+								$shortContent = \Illuminate\Support\Str::limit(strip_tags($left_banner_contents->contents), 500);
 							}
-							?>
-							
+						@endphp
+						<p class="msg">
+							@if ($left_banner_contents->image)
+								<img class="rounded" src="{{ asset('imgs/banner_contents').'/'.$left_banner_contents->image }}" width="50%" height="100">
+							@else
+								<img class="rounded" src="https://dummyimage.com/1200x400/000/fff" width="50%" height="100">
+							@endif
+
+							@if ($left_banner_contents->contents)
+									{{ $shortContent }} <a href="#">See more</a>
+							@else
+								In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content meaningful content		
+							@endif
+						
+
 						</p>
 					</div>
 				</div>
@@ -96,8 +92,7 @@
 			<div class="col-md-3 height-300">
 				<div class="row">
 					<div class="card chairman-msg" width="200">
-						<div class="text-center">
-							
+						<p class="h-100">
 							<?php
 								if(isset($right_banner_contents->image)){ ?>
 									<img class="rounded" src="{{ asset('imgs/banner_contents').'/'.$right_banner_contents->image }}" width="50%" height="100">
@@ -105,11 +100,12 @@
 									<img class="rounded" src="https://dummyimage.com/1200x400/000/fff" width="50%" height="100">
 								<?php }
 							?>
-						</div>
-						<p class="h-100">
+						
 							<?php
 							if(isset($right_banner_contents->contents)){
-								echo $right_banner_contents->contents;
+								$shortMsg = \Illuminate\Support\Str::limit(strip_tags($right_banner_contents->contents), 500);
+								echo $shortMsg;
+								echo ' <a href="#">See more</a>';
 							}else{
 								echo "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content meaningful content";
 							}
@@ -129,8 +125,8 @@
 				<div class="row about_us">
 					<div class="col-md-12 mb-5"> 
 						<div class="card text-center">
-						  <h4>About Us</h4>
-						  <h5><?php echo $about_us->title;?></h5>
+						  <h4>আমাদের সম্পর্কে </h4>
+						  <h5>{{ $about_us->title }}  </h5>
 						  <div class="card-body">
 						    <p><?php echo $about_us->contents;?></p>
 						  </div>
