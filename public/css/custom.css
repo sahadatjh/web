@@ -74,10 +74,15 @@
 .bg-color-marque .marquee-content .marquee-self{
 	padding-top: 5px;
 }
-.school-name{
+.school-name {
     font-size: 50px;
     font-weight: bold;
 }
-.slider_containter{
+.slider_containter {
 	width: 100% !important;
+}
+
+p {
+	display: block;
+	width: 100%;
 }
