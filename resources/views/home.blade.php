@@ -17,7 +17,7 @@
 							}
 							$shortContent = "";
 							if($left_banner_contents && $left_banner_contents->contents){
-								$shortContent = \Illuminate\Support\Str::limit(strip_tags($left_banner_contents->contents), 500);
+								$shortContent = \Illuminate\Support\Str::limit(strip_tags($left_banner_contents->contents), 700);
 							}
 						@endphp
 						<p class="msg">
@@ -103,7 +103,7 @@
 						
 							<?php
 							if(isset($right_banner_contents->contents)){
-								$shortMsg = \Illuminate\Support\Str::limit(strip_tags($right_banner_contents->contents), 500);
+								$shortMsg = \Illuminate\Support\Str::limit(strip_tags($right_banner_contents->contents), 700);
 								echo $shortMsg;
 								echo ' <a href="#">See more</a>';
 							}else{

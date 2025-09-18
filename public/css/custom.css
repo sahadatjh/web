@@ -29,8 +29,8 @@
 .principal-msg img, .chairman-msg img{
 	float: left;
     margin-right: 10px;
-    height: 180px;
-    width: 150px;
+    height: 120px;
+    width: 100px;
 }
 .principal-msg p, .chairman-msg p{
 	text-align: justify
@@ -77,4 +77,7 @@
 .school-name{
     font-size: 50px;
     font-weight: bold;
+}
+.slider_containter{
+	width: 100% !important;
 }
